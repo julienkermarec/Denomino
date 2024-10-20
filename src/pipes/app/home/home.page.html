@@ -1,0 +1,72 @@
+<ion-header [translucent]="false" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      
+    </ion-buttons>
+    <ion-buttons slot="end">
+      @if (!loading()){
+      @if (!connected()){
+      <ion-button  color="light" shape="round" fill="solid"  (click)="connect()">
+        <ion-label>Connect Wallet</ion-label>
+      </ion-button>
+      } @else {
+      <ion-button   color="light" shape="round" fill="solid" (click)="disconnect()">
+        <!-- <ion-icon slot="start" name="person"></ion-icon> -->
+        &nbsp;&nbsp;{{friendlyAddress() || '' | walletAddressShortener}}
+        <ion-icon slot="end" name="chevron-down"></ion-icon>
+      </ion-button>
+      }
+      } @else {
+      <ion-button  color="light" shape="round" fill="solid"  [disabled]="true">
+        &nbsp;&nbsp;Loading
+      </ion-button>
+      }
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar placeholder="Search dealers..." [(ngModel)]="searchTerm" (ionChange)="search($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-chip>Filter</ion-chip> -->
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Best dealers
+      </ion-label>
+      <ion-button color="primary"  fill="clear">
+        See All
+      </ion-button>
+    </ion-list-header>
+    @for (display of devices();
+    track trackByIndex(setIndex);
+    let setIndex = $index;) {
+    <ion-item (click)="goToDetails(display)" detail="true">
+      <ion-thumbnail slot="start">
+        <img [src]="'assets/' + display.icon" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{display.name}}</h2>
+        <p>
+          <ion-text>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon   name="star"></ion-icon>
+            ({{display.count}})
+          </ion-text><br />
+          <ion-note>
+            <ion-icon name="shield-checkmark"></ion-icon>
+            1M+ deals
+          </ion-note>
+        </p>
+        
+      </ion-label>
+    </ion-item>
+  }
+  </ion-list>
+  <div class="viewport-border"></div>
+  <div class="viewport-stable_border"></div>
+</ion-content>

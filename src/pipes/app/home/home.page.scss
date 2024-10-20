@@ -1,0 +1,33 @@
+ion-header {
+  ion-toolbar {
+    --ion-toolbar-background: transparent;
+  }
+}
+
+ion-list
+ion-item {
+  ion-thumbnail {
+    --border-radius : 12px;
+  }
+  ion-label{
+    h2 {
+      font-weight :600;
+    }
+    p {
+      ion-note {
+
+        ion-icon {
+          color : rgb(0, 0, 0);
+          --color : rgb(0, 0, 0);
+          }
+    font-size: 14Px;
+    --color: #454545;
+      }
+      ion-text {
+        ion-icon {
+        color : rgb(246, 129, 54);
+        --color : rgb(246, 129, 54);
+      }}
+    }
+  }
+}
