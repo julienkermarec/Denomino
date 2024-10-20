@@ -1,7 +1,7 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="false">
   <ion-toolbar>
     <ion-title>
-      New deal
+      My deals
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,7 +9,50 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">New deal</ion-title>
+      <ion-title size="large">My deals</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/5.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>UQ5515..3378</h2>
+        <p>
+          <ion-text>Snapchap account</ion-text><br />
+          <ion-note>150 TON</ion-note>
+        </p>
+      </ion-label>
+      <ion-chip slot="end" color="primary">OPEN</ion-chip>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/2.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>UQ0371..5693</h2>
+        <p>
+          <ion-text>Bot account</ion-text><br />
+          <ion-note>997 TON</ion-note>
+        </p>
+      </ion-label>
+      <ion-chip slot="end" color="success">COMPLETED</ion-chip>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/4.jpg" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>UQ0371..5693</h2>
+        <p>
+          <ion-text>Channel account</ion-text><br />
+          <ion-note>120 TON</ion-note>
+        </p>
+      </ion-label>
+      <ion-chip slot="end" color="success">COMPLETED</ion-chip>
+    </ion-item>
+    
+  </ion-list>
+
 </ion-content>
