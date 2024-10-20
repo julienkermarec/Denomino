@@ -19,7 +19,7 @@
 
 ### Deploy
 
-`ionic build --prod -- --base-href https://julienkermarec.github.io/VisifyBot/`
+`ionic build --prod -- --base-href https://julienkermarec.github.io/Denomino/`
 `npx angular-cli-ghpages --dir=www`
 
 
