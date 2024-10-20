@@ -1,10 +1,10 @@
-#SaferDeals
+# SaferDeals
 
-Bot : @saferDeals_bot
-Email : saferdeals@smartcontract.org
-Wallet : UQA5mGajJS7z5dJJveQ9Ae7kluPH4L0hRQkZvOzwxVbPfy4j
-Ton project : https://eco.ton.org/en/profile/applications/1255274b-d2cf-81f5-8366-cc1b702bf1d5
-Presentation : https://docs.google.com/presentation/d/1oqPg7MPLcqt6t8Rxbkt6Htiaj2qaNcf4pVg16WR9wiE/edit?usp=sharing
+- Bot : @saferDeals_bot
+- Email : saferdeals@smartcontract.org
+- Wallet : UQA5mGajJS7z5dJJveQ9Ae7kluPH4L0hRQkZvOzwxVbPfy4j
+- Ton project : https://eco.ton.org/en/profile/applications/1255274b-d2cf-81f5-8366-cc1b702bf1d5
+- Presentation : https://docs.google.com/presentation/d/1oqPg7MPLcqt6t8Rxbkt6Htiaj2qaNcf4pVg16WR9wiE/edit?usp=sharing
 
 ## Deploying
 
